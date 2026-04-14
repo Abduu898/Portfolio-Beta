@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abderrahim Bahraoui — Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="nav-inner">
+        <span class="nav-logo">Abderrahim<span>.</span></span>
+        <nav>
+          <a href="#home">Accueil</a>
+          <a href="#skills">Compétences</a>
+          <a href="#projects">Projets</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a href="cv.pdf" download class="btn-cv">Télécharger CV</a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-photo">
+        <img
+          src="https://www.shutterstock.com/shutterstock/photos/1873784920/display_1500/stock-photo-profile-picture-of-smiling-young-african-american-man-in-glasses-pose-in-own-home-apartment-close-1873784920.jpg"
+          alt="Photo de profil"
+        />
+      </div>
+      <div class="hero-text">
+        <p class="hero-tag">Étudiant 2ème année — EMSI</p>
+        <h1>Bonjour, je suis <span>Abderrahim</span></h1>
+        <p class="hero-desc">
+          Étudiant en informatique passionné par le développement logiciel et les nouvelles technologies.
+          J'aime résoudre des problèmes techniques et concevoir des solutions efficaces à travers la programmation.
+        </p>
+        <div class="hero-links">
+          <a href="https://www.linkedin.com/in/abdrrahim-bahraoui-8b96b81b4/" target="_blank" class="btn-primary">LinkedIn</a>
+          <a href="https://github.com/Abduu898" target="_blank" class="btn-outline">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title">Compétences techniques</h2>
+        <div class="skills-grid">
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">C</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--fill: 70%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Python</span>
+              <span class="skill-pct">65%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--fill: 65%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Java</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--fill: 60%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Dart / Flutter</span>
+              <span class="skill-pct">55%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--fill: 55%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">HTML / CSS</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--fill: 75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Git</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--fill: 60%"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Mes projets</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nom du projet</th>
+              <th>Description</th>
+              <th>Technologies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Projet 1</td>
+              <td>Application mobile permettant de gérer et organiser des tâches quotidiennes.</td>
+              <td>Dart, Flutter</td>
+            </tr>
+            <tr>
+              <td>Projet 2</td>
+              <td>Site web développé pour présenter les services d'une entreprise locale.</td>
+              <td>HTML, CSS, JavaScript</td>
+            </tr>
+            <tr>
+              <td>Projet 3</td>
+              <td>Application de bureau destinée à la gestion des finances personnelles.</td>
+              <td>Java, JavaFX</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-intro">Pour plus d'informations, envoyez-moi un message.</p>
+        <form method="post" action="" class="contact-form">
+          <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message..."></textarea>
+          </div>
+          <input type="submit" value="Envoyer" class="btn-submit" />
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2025 Abderrahim Bahraoui — EMSI Fès</p>
+    </footer>
+
+  </body>
+</html>
